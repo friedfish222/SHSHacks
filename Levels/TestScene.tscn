@@ -1,10 +1,11 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Levels/Level.gd" type="Script" id=1]
-[ext_resource path="res://addons/GameTemplate/GUI/Prompt/Prompt.tscn" type="PackedScene" id=2]
-[ext_resource path="res://addons/GameTemplate/GUI/Prompt/sliderPrompt.tscn" type="PackedScene" id=3]
+[ext_resource path="res://addons/mzbuild/GUI/Prompt/Prompt.tscn" type="PackedScene" id=2]
+[ext_resource path="res://addons/mzbuild/GUI/Prompt/sliderPrompt.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Levels/popup.gd" type="Script" id=4]
 [ext_resource path="res://Assets/Graphics/galletcity_tiles.png" type="Texture" id=5]
+
 
 [sub_resource type="TileSet" id=1]
 0/name = "galletcity_tiles.png 0"

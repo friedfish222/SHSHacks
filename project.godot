@@ -12,12 +12,12 @@ _global_script_classes=[ {
 "base": "Reference",
 "class": "ResourceAsyncLoader",
 "language": "GDScript",
-"path": "res://addons/GameTemplate/Utility/ResourceAsyncLoader.gd"
+"path": "res://addons/mzbuild/Utility/ResourceAsyncLoader.gd"
 }, {
 "base": "Resource",
 "class": "SaveSettings",
 "language": "GDScript",
-"path": "res://addons/GameTemplate/Utility/SaveSettings.gd"
+"path": "res://addons/mzbuild/Utility/SaveSettings.gd"
 } ]
 _global_script_class_icons={
 "ResourceAsyncLoader": "",
@@ -67,7 +67,7 @@ window/stretch/aspect="keep_height"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "GameTemplate" )
+enabled=PoolStringArray(  )
 
 [importer_defaults]
 

@@ -1,0 +1,16 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+
+[deps]
+
+files=[ "res://addons/mzbuild/Localization/Localization.en.translation", "res://addons/mzbuild/Localization/Localization.de.translation", "res://addons/mzbuild/Localization/Localization.lv.translation", "res://addons/mzbuild/Localization/Localization.es.translation", "res://addons/mzbuild/Localization/Localization.ru.translation", "res://addons/mzbuild/Localization/Localization.fr.translation", "res://addons/mzbuild/Localization/Localization.pt_BR.translation", "res://addons/mzbuild/Localization/Localization.it.translation", "res://addons/mzbuild/Localization/Localization.sv_SE.translation", "res://addons/mzbuild/Localization/Localization.tr.translation" ]
+
+source_file="res://addons/mzbuild/Localization/Localization.csv"
+dest_files=[ "res://addons/mzbuild/Localization/Localization.en.translation", "res://addons/mzbuild/Localization/Localization.de.translation", "res://addons/mzbuild/Localization/Localization.lv.translation", "res://addons/mzbuild/Localization/Localization.es.translation", "res://addons/mzbuild/Localization/Localization.ru.translation", "res://addons/mzbuild/Localization/Localization.fr.translation", "res://addons/mzbuild/Localization/Localization.pt_BR.translation", "res://addons/mzbuild/Localization/Localization.it.translation", "res://addons/mzbuild/Localization/Localization.sv_SE.translation", "res://addons/mzbuild/Localization/Localization.tr.translation" ]
+
+[params]
+
+compress=true
+delimiter=0
