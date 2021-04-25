@@ -1,0 +1,109 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://addons/GameTemplate/Assets/Fonts/m5x7_16.tres" type="DynamicFont" id=1]
+[ext_resource path="res://addons/GameTemplate/GUI/Buttons/DefaultButton.tscn" type="PackedScene" id=2]
+[ext_resource path="res://addons/GameTemplate/GUI/Prompt/Prompt.gd" type="Script" id=3]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.0941176, 0.0784314, 0.145098, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 1, 1, 1, 1 )
+anti_aliasing = false
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[node name="Prompt" type="Popup"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 70.0
+margin_top = -40.1742
+margin_right = 70.0
+margin_bottom = -0.174149
+custom_constants/margin_right = 70
+custom_constants/margin_top = 40
+custom_constants/margin_left = 70
+custom_constants/margin_bottom = 60
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="MarginContainer2"]
+margin_left = 70.0
+margin_top = 40.0
+margin_right = 250.0
+margin_bottom = 160.0
+rect_min_size = Vector2( 180, 120 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 1 )
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer2/Panel"]
+margin_right = 181.0
+margin_bottom = 120.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/margin_right = 8
+custom_constants/margin_top = 8
+custom_constants/margin_left = 8
+custom_constants/margin_bottom = 8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer2/Panel/MarginContainer"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 173.0
+margin_bottom = 112.0
+rect_min_size = Vector2( 165, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer2/Panel/MarginContainer/VBoxContainer"]
+margin_right = 165.0
+margin_bottom = 29.0
+custom_styles/panel = SubResource( 2 )
+
+[node name="Message" type="Label" parent="MarginContainer2/Panel/MarginContainer/VBoxContainer/PanelContainer"]
+margin_right = 165.0
+margin_bottom = 29.0
+size_flags_horizontal = 5
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 1 )
+text = "We at Java welcome you as the new city planner!"
+align = 1
+autowrap = true
+
+[node name="ans1" parent="MarginContainer2/Panel/MarginContainer/VBoxContainer" instance=ExtResource( 2 )]
+margin_top = 33.0
+margin_right = 165.0
+margin_bottom = 47.0
+text = ""
+clip_text = true
+
+[node name="ans2" parent="MarginContainer2/Panel/MarginContainer/VBoxContainer" instance=ExtResource( 2 )]
+margin_top = 51.0
+margin_right = 165.0
+margin_bottom = 65.0
+text = "CANCEL"
+
+[node name="ans3" parent="MarginContainer2/Panel/MarginContainer/VBoxContainer" instance=ExtResource( 2 )]
+margin_top = 69.0
+margin_right = 165.0
+margin_bottom = 83.0
+text = "CANCEL"
+[connection signal="pressed" from="MarginContainer2/Panel/MarginContainer/VBoxContainer/ans1" to="." method="_on_ans1_pressed"]
+[connection signal="pressed" from="MarginContainer2/Panel/MarginContainer/VBoxContainer/ans2" to="." method="_on_ans2_pressed"]
+[connection signal="pressed" from="MarginContainer2/Panel/MarginContainer/VBoxContainer/ans3" to="." method="_on_ans3_pressed"]
